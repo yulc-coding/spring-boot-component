@@ -7,10 +7,27 @@
     <groupId>org.ylc.frame</groupId>
     <artifactId>spring-boot-component</artifactId>
     <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>root</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
+        <spring-boot-version>2.4.2</spring-boot-version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

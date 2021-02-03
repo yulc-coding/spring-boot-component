@@ -1,0 +1,11 @@
+server:
+  port: 19092
+spring:
+  application:
+    name: kafka
+  kafka:
+    bootstrap-servers:
+      - localhost:9092
+
+
+

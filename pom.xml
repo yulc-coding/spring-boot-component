@@ -12,6 +12,7 @@
 
     <modules>
         <module>mq-kafka</module>
+        <module>security</module>
     </modules>
 
     <properties>
